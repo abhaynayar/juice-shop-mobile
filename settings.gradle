@@ -1,0 +1,2 @@
+rootProject.name='Juice Shop Mobile'
+include ':app'
