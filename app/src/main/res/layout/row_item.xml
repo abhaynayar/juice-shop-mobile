@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="80dp"
-    android:background="#eeeeee">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="30dp"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="150dp"
-        android:layout_height="match_parent"
-        android:textSize="18dp"
-        android:gravity="center_vertical"
-        android:layout_marginLeft="12dp"
-        android:id="@+id/name"
-        android:text = "Name"
-        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/imgProduct" />
 
-    <TextView
-        android:layout_width="200dp"
-        android:layout_height="match_parent"
-        android:textSize="18dp"
-        android:gravity="center_vertical"
-        android:layout_marginLeft="12dp"
-        android:id="@+id/description"
-        android:layout_toRightOf="@+id/name"
-        android:text="Description"
-        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+        horizontal
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

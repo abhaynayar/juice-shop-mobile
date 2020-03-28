@@ -36,7 +36,7 @@ public class DisplayList extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        String jsonUrl = "http://10.0.2.2:3000/api/Products";
+        String jsonUrl = "http://192.168.1.15:3000/api/Products";
 
         StringRequest stringRequest = new StringRequest(
 
