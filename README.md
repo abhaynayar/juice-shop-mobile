@@ -23,9 +23,9 @@ git clone https://github.com/abhaynayar/juice-shop-mobile.git
 
 ## Challenges
 
-For now, there is a product listing in the app that is being fetched from `/api/Products`.
+For now, there is just a product listing in the app that is being fetched from `/api/Products`.
 
-![](screen.png)
+<img src="screen.png" height="400px">
 
 ## To-do
 
